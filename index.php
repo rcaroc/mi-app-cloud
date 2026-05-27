@@ -3,6 +3,7 @@
  
 // Las variables de entorno se configuran en el panel de Render
 $appNombre  = getenv('APP_NOMBRE') ?: 'Aplicación Web';
+$appCurso   = getenv('APP_CURSO') ?: 'Curso de Cloud';
 $serverHost = $_SERVER['HTTP_HOST'] ?? 'localhost';
 $fechaHora  = date('d/m/Y H:i:s');
  
@@ -25,6 +26,7 @@ $fechaHora  = date('d/m/Y H:i:s');
     <div class="card">
         <h1>🚀 Deploy Exitoso</h1>
         <p>Aplicación: <strong><?= htmlspecialchars($appNombre) ?></strong></p>
+        <p>Curso: <strong><?= htmlspecialchars($appCurso) ?></strong></p>
         <p>Servidor: <span class="badge"><?= htmlspecialchars($serverHost) ?></span></p>
         <p>Fecha y hora del servidor: <strong><?= $fechaHora ?></strong></p>
         <p>PHP Version: <?= phpversion() ?></p>
