@@ -30,6 +30,7 @@ $fechaHora  = date('d/m/Y H:i:s');
         <p>Servidor: <span class="badge"><?= htmlspecialchars($serverHost) ?></span></p>
         <p>Fecha y hora del servidor: <strong><?= $fechaHora ?></strong></p>
         <p>PHP Version: <?= phpversion() ?></p>
+        <a href="contacto.php">Ir a Contacto</a>
     </div>
 </body>
 </html>
